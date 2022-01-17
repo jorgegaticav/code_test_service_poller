@@ -14,7 +14,7 @@ public class Database {
 
     private static final int PORT = 3309;
     private static final String HOST = "192.168.99.100";
-    private static final String DB = "service_poller";
+    private static final String DB = "dev";
     private static final String USER = "dev"; //dev
     private static final String PASS = "secret"; //secret
     private static final int MAX_POOL_SIZE = 5;

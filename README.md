@@ -41,6 +41,7 @@ To start the MySQL database in a docker container, run:
 ```
 docker-compose -f src/main/docker/mysql.yml up -d
 ```
+Wait for the container to be ready
 
 ## Build & Run Java Server
 
@@ -55,7 +56,7 @@ Run the gradle wrapper to build and start the Java server on `locahost:8080`.
 Go to client directory:
 
 ```
-cd ./src/main/webapp/app/
+cd ./src/main/webapp/
 ```
 
 Install dependencies (`node_modules` folder):
