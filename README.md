@@ -31,7 +31,13 @@ add/remove services
 really slowly)
 - [X]  URL Validation ("sdgf" is probably not a valid service)
 - [ ]  Multi user support. Users should not see the services added by
-another user
+another user. NOTE: Added USER table on MySQL for later implementation (JWT Auth ideally, otherwise cookies)
+
+# Technology Stack used
+- Server: Java v14 (OpenJDK) using Vert.x 4.2.3 library
+- Database: MySQL 8.0
+- Webclient: JavaScript (React.js)
+- Build tool: Gradle
 
 # Instructions
 
@@ -45,11 +51,20 @@ Wait for the container to be ready
 
 ## Build & Run Java Server
 
-Run the gradle wrapper to build and start the Java server on `locahost:8080`.
+1. Using IntelliJ (Recommended), right-click on the main class `(src/main/java/App.java)` and select 
+```
+Run 'App.main()'
+``` 
+
+Or 
+
+2. Run the gradle wrapper:
 
 ```
 ./gradlew clean run
 ```
+
+Both options will build and start the Java server on `locahost:8080`
 
 ## Run Client
 

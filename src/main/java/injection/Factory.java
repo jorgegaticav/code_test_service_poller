@@ -5,6 +5,7 @@ import dagger.Component;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.client.WebClient;
+import io.vertx.mysqlclient.MySQLPool;
 import poller.BackgroundPoller;
 import rest.ServiceRouter;
 
@@ -14,6 +15,8 @@ public interface Factory{
     ServiceRouter serviceRouter();
 
     BackgroundPoller backgroundPoller();
+
+    MySQLPool mySQLClient();
 
     @Component.Builder
     interface Builder {

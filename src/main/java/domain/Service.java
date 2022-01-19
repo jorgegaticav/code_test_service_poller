@@ -17,7 +17,6 @@ public class Service {
     URL url;
     String status;
 
-
     @JsonDeserialize(using = LocalDateDeserializer.class)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     LocalDateTime createdDate;
